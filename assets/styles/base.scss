@@ -1,0 +1,13 @@
+body {
+  font-family: sans-serif;
+  color: $color-text;
+  background: $grey-light;
+  font-weight: 600;
+  padding: (2 * $spacing) $spacing;
+}
+
+@media (min-width: 768px) {
+  body {
+    padding: (6 * $spacing) (3 * $spacing);
+  }
+}
