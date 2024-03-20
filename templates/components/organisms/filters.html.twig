@@ -1,0 +1,9 @@
+{% set filters = filters %} {# required #}
+
+<div class="filters">
+    {% for filter in filters %}
+        <button class="button button-dropdown">
+            {{ filter }}
+        </button>
+    {% endfor %}
+</div>
