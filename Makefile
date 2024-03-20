@@ -8,7 +8,7 @@ help: ## Outputs this help screen
 
 install: ## Install stack, assets and vendors
 	bin/composer install
-	php bin/console d:m:m -n
+	#php bin/console d:m:m -n
 	npm install
 
 start: ## Start the stack (you can access the project on localhost:8080 after that)
