@@ -1,0 +1,40 @@
+.button {
+  background: none;
+  border: none;
+  border-radius: 0;
+  font-weight: inherit;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.button-with-icon {
+  display: flex;
+  color: $blue;
+  & :first-child {
+    margin-right: $spacing;
+    color: currentColor;
+  }
+}
+
+.button-icon {
+  width: 5 * $spacing;
+  height: 5 * $spacing;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $blue-mid;
+  border-radius: $spacing;
+  &:hover {
+    background: $color-primary;
+  }
+}
+
+.button-dropdown {
+  background: $color-primary;
+  color: $white;
+  padding: $spacing (2 * $spacing);
+  border-radius: $spacing;
+  &::after {
+    content: "🔽";
+  }
+}
