@@ -1,0 +1,17 @@
+.member-teams {
+  & + & {
+    margin-top: 2 * $spacing;
+  }
+
+  &--unaffected {
+    color: $color-alert;
+  }
+
+  &__type {
+    color: $blue-mid;
+
+    &--highlighted {
+      color: $blue;
+    }
+  }
+}
