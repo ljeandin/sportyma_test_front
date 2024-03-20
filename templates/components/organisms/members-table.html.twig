@@ -1,0 +1,61 @@
+{% set members = [
+    {
+        name: 'Chris Azerty',
+        birth: '26/05/1987',
+        teams: [
+            {
+                type: 'Joueur',
+                team: 'Sénior - Équipe 1'
+            },
+            {
+                type: 'Staff',
+                team: 'Sénior - Équipe 1'
+            },
+            {
+                type: 'Non Affecté',
+                team: 'U20'
+            }
+        ],
+        connected: '19/03/2024'
+    },
+    {
+        name: 'AZERTY UIOP',
+        birth: '08/02/2000',
+        teams: [
+            {
+                type: 'Staff',
+                team: 'Sénior - Équipe 2'
+            },
+            {
+                type: 'Joueur',
+                team: 'Sénior - Équipe 1'
+            },
+        ],
+    }
+] %}
+
+<div class="members-table">
+    <div class="members-table__row members-table__row--header">
+        <span>Prénom, nom</span>
+        <span>Né le</span>
+        <span>Équipe</span>
+        <span>Connexion</span>
+        <span>Contacter</span>
+    </div>
+    {% for member in members %}
+        <div class="members-table__row">
+            {% include '/components/molecules/nametag.html.twig' with {
+                name: member.name,
+            } only %}
+            <span>{{ member.birth }}</span>
+            {% include '/components/molecules/member-teams.html.twig' with {
+                teams : member.teams,
+            } only %}
+
+            {% include '/components/molecules/latest-connected.html.twig' with {
+                connectedDate: member.connected|default(null),
+            } only %}
+            <button class="button button-icon">💬</button>
+        </div>
+    {% endfor %}
+</div>
