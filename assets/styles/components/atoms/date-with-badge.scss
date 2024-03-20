@@ -1,0 +1,23 @@
+.date-with-badge {
+  padding: (0.5 * $spacing) $spacing;
+  border: 1px solid $grey;
+  border-radius: 2 * $spacing;
+  display: inline-flex;
+  align-items: center;
+
+  &__badge {
+    display: block;
+    width: $spacing;
+    height: $spacing;
+    border-radius: 50%;
+    margin-right: $spacing;
+  }
+
+  &__badge--valid {
+    background: $color-valid;
+  }
+
+  &__badge--alert {
+    background: $color-alert;
+  }
+}

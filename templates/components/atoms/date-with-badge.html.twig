@@ -1,0 +1,7 @@
+{% set badge = badge %} {# required #} {# "valid" or "alert" #}
+{% set date = date %} {# required #} {# string or null #}
+
+<span class="date-with-badge">
+    <span class="date-with-badge__badge date-with-badge__badge--{{ badge }}"></span>
+    {{ date ? date : 'Jamais connecté' }}
+</span>
