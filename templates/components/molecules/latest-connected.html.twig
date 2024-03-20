@@ -1,0 +1,15 @@
+{% set connectedDate = connectedDate|default(null) %} {# string or null#}
+
+<div class="latest-connected">
+    {% include '/components/atoms/date-with-badge.html.twig' with {
+        date : connectedDate,
+        badge: connectedDate ? 'valid' : 'alert'
+    } only %}
+
+    {% if connectedDate is null %}
+        <button class="button button-with-icon mt-2">
+            <span>🔁</span>
+            <span>Renvoyer l'invitation</span>
+        </button>
+    {% endif %}
+</div>
