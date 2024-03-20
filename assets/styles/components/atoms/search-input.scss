@@ -1,0 +1,11 @@
+.search-input {
+  font-size: 1em;
+  padding: 2 * $spacing;
+  display: block;
+  border-radius: $spacing;
+  border: 2px solid $grey;
+  &:focus,
+  &:hover {
+    border-color: $color-primary;
+  }
+}
