@@ -7,8 +7,13 @@
   display: block;
   border-radius: $spacing;
   border: 2px solid $grey;
+  background-image: url("../../../images/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: top 15px right 15px;
+  box-shadow: none;
   &:focus,
   &:hover {
     border-color: $color-primary;
+    background-image: none;
   }
 }

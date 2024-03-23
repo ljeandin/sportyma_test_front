@@ -7,8 +7,8 @@
     } only %}
 
     {% if connectedDate is null %}
-        <button class="button button-with-icon mt-2">
-            <span>🔁</span>
+        <button class="button button--with-icon latest-connected__resend-invite-button">
+            <img src="{{ asset('build/images/icons/update.svg')}}" alt=""/>
             <span>Renvoyer l'invitation</span>
         </button>
     {% endif %}

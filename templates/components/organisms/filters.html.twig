@@ -2,8 +2,9 @@
 
 <div class="filters">
     {% for filter in filters %}
-        <button class="button button-dropdown">
+        <button class="button button--dropdown mr-1">
             {{ filter }}
+            <img src="{{ asset('build/images/icons/dropdown.svg')}}" alt=""/>
         </button>
     {% endfor %}
 </div>
