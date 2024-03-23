@@ -16,30 +16,25 @@
 .button--with-icon {
   display: flex;
   color: $blue;
-  & :first-child {
-    margin-right: $spacing;
-  }
 }
 
-.button-icon {
-  width: 5 * $spacing;
-  height: 5 * $spacing;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $blue-mid;
-  border-radius: $spacing;
-  &:hover {
-    background: $color-primary;
-  }
+.button--icon-only {
+  width: 20px;
+  height: 20px;
 }
 
-.button-dropdown {
+.button--dropdown {
   background: $color-primary;
   color: $white;
-  padding: $spacing (2 * $spacing);
-  border-radius: $spacing;
-  &::after {
-    content: "🔽";
+  padding: 8px 15px;
+  border-radius: 70px;
+  display: flex;
+  align-items: center;
+}
+
+.button--with-icon,
+.button--dropdown {
+  & > :first-child {
+    margin-right: 5px;
   }
 }

@@ -1,19 +1,17 @@
-$spacing: 0.5em;
-
 @for $i from 1 through 10 {
   .mt-#{$i} {
-    margin-top: $i * $spacing;
+    margin-top: $i * 10px;
   }
 
   .mb-#{$i} {
-    margin-bottom: $i * $spacing;
+    margin-bottom: $i * 10px;
   }
 
   .ml-#{$i} {
-    margin-left: $i * $spacing;
+    margin-left: $i * 10px;
   }
 
   .mr-#{$i} {
-    margin-right: $i * $spacing;
+    margin-right: $i * 10px;
   }
 }

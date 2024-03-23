@@ -2,7 +2,8 @@
   font-size: 1em;
   line-height: 1.4;
   font-weight: 300;
-  padding: 2 * $spacing;
+  min-width: 319px;
+  padding: 14px 15px;
   display: block;
   border-radius: $spacing;
   border: 2px solid $grey;
