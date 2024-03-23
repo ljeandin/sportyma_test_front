@@ -1,9 +1,12 @@
 body {
-  font-family: sans-serif;
   color: $color-text;
   background: $grey-light;
-  font-weight: 600;
   padding: (2 * $spacing) $spacing;
+}
+
+* {
+  font-family: "Kanit", sans-serif;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {

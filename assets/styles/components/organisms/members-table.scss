@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   min-width: 120 * $spacing;
+  font-size: 14px;
+  line-height: 1.4;
 
   &__row {
     display: grid;
@@ -23,6 +25,12 @@
     &--header {
       color: $color-primary;
       text-transform: uppercase;
+      font-size: 12px;
+      line-height: 1.5;
+      letter-spacing: 0.08em;
+      & > * {
+        font-weight: 500;
+      }
       &:hover {
         box-shadow: none;
       }

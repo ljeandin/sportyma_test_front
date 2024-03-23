@@ -1,5 +1,6 @@
 .nametag {
   display: flex;
+  font-weight: 500;
   align-items: baseline;
   &__avatar {
     background: $grey;
