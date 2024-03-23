@@ -21,7 +21,7 @@
     },
     {
         avatar: 'build/images/players_avatars/player_2.jpg',
-        name: 'AZERTY UIOP',
+        name: 'Azerty Uiopqsdfghjklmwxcvbn',
         birth: '08/02/2000',
         teams: [
             {
@@ -47,6 +47,7 @@
     {% for member in members %}
         <div class="members-table__row">
             {% include '/components/molecules/nametag.html.twig' with {
+                avatar: member.avatar,
                 name: member.name,
             } only %}
             <span>{{ member.birth }}</span>
@@ -57,7 +58,9 @@
             {% include '/components/molecules/latest-connected.html.twig' with {
                 connectedDate: member.connected|default(null),
             } only %}
-            <button class="button button-icon">💬</button>
+            <button class="button button--icon-only">
+               <img src="{{ asset('build/images/icons/chat.svg') }}" alt="" />
+            </button>
         </div>
     {% endfor %}
 </div>

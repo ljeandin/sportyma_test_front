@@ -7,8 +7,8 @@
 
   &__row {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-column-gap: $spacing;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-column-gap: 20px;
     padding: 15px 20px;
     background: $grey-extra-light;
     border-radius: 10px;
