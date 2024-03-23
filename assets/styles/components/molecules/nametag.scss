@@ -1,19 +1,17 @@
 .nametag {
   display: flex;
   font-weight: 500;
+
   &__name {
     text-overflow: ellipsis;
     overflow: hidden;
     max-width: 100%;
     white-space: nowrap;
   }
+
   &__avatar {
-    background: $grey;
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
